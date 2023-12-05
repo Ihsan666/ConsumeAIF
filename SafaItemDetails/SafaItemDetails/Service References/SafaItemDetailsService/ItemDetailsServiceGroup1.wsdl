@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:i0="http://tempuri.org" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ItemDetailsServiceGroup" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="NetTcpBinding_ItemDetailsService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1" />
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <msf:WindowsTransportSecurity xmlns:msf="http://schemas.microsoft.com/ws/2006/05/framing/policy">
+                  <msf:ProtectionLevel>EncryptAndSign</msf:ProtectionLevel>
+                </msf:WindowsTransportSecurity>
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:import namespace="http://tempuri.org" location="http://safa-aos-01:8101/DynamicsAx/Services/ItemDetailsServiceGroup?wsdl=wsdl0" />
+  <wsdl:types />
+  <wsdl:binding name="NetTcpBinding_ItemDetailsService" type="i0:ItemDetailsService">
+    <wsp:PolicyReference URI="#NetTcpBinding_ItemDetailsService_policy" />
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="getItemBatches">
+      <soap12:operation soapAction="http://tempuri.org/ItemDetailsService/getItemBatches" style="document" />
+      <wsdl:input name="ItemDetailsServiceGetItemBatchesRequest">
+        <soap12:header message="i0:ItemDetailsServiceGetItemBatchesRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="ItemDetailsServiceGetItemBatchesResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="geDetailsFromBarcode">
+      <soap12:operation soapAction="http://tempuri.org/ItemDetailsService/geDetailsFromBarcode" style="document" />
+      <wsdl:input name="ItemDetailsServiceGeDetailsFromBarcodeRequest">
+        <soap12:header message="i0:ItemDetailsServiceGeDetailsFromBarcodeRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="ItemDetailsServiceGeDetailsFromBarcodeResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getOpenTagCountJournals">
+      <soap12:operation soapAction="http://tempuri.org/ItemDetailsService/getOpenTagCountJournals" style="document" />
+      <wsdl:input name="ItemDetailsServiceGetOpenTagCountJournalsRequest">
+        <soap12:header message="i0:ItemDetailsServiceGetOpenTagCountJournalsRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="ItemDetailsServiceGetOpenTagCountJournalsResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="SafaCreateEmployee">
+      <soap12:operation soapAction="http://tempuri.org/ItemDetailsService/SafaCreateEmployee" style="document" />
+      <wsdl:input name="ItemDetailsServiceSafaCreateEmployeeRequest">
+        <soap12:header message="i0:ItemDetailsServiceSafaCreateEmployeeRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="ItemDetailsServiceSafaCreateEmployeeResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getCustomerPoints">
+      <soap12:operation soapAction="http://tempuri.org/ItemDetailsService/getCustomerPoints" style="document" />
+      <wsdl:input name="ItemDetailsServiceGetCustomerPointsRequest">
+        <soap12:header message="i0:ItemDetailsServiceGetCustomerPointsRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="ItemDetailsServiceGetCustomerPointsResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getAllItems">
+      <soap12:operation soapAction="http://tempuri.org/ItemDetailsService/getAllItems" style="document" />
+      <wsdl:input name="ItemDetailsServiceGetAllItemsRequest">
+        <soap12:header message="i0:ItemDetailsServiceGetAllItemsRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="ItemDetailsServiceGetAllItemsResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getItemDetails">
+      <soap12:operation soapAction="http://tempuri.org/ItemDetailsService/getItemDetails" style="document" />
+      <wsdl:input name="ItemDetailsServiceGetItemDetailsRequest">
+        <soap12:header message="i0:ItemDetailsServiceGetItemDetailsRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="ItemDetailsServiceGetItemDetailsResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="CreateTagCountLine">
+      <soap12:operation soapAction="http://tempuri.org/ItemDetailsService/CreateTagCountLine" style="document" />
+      <wsdl:input name="ItemDetailsServiceCreateTagCountLineRequest">
+        <soap12:header message="i0:ItemDetailsServiceCreateTagCountLineRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="ItemDetailsServiceCreateTagCountLineResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="earnOrRedeemPoints">
+      <soap12:operation soapAction="http://tempuri.org/ItemDetailsService/earnOrRedeemPoints" style="document" />
+      <wsdl:input name="ItemDetailsServiceEarnOrRedeemPointsRequest">
+        <soap12:header message="i0:ItemDetailsServiceEarnOrRedeemPointsRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="ItemDetailsServiceEarnOrRedeemPointsResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="CreateEmployee">
+      <soap12:operation soapAction="http://tempuri.org/ItemDetailsService/CreateEmployee" style="document" />
+      <wsdl:input name="ItemDetailsServiceCreateEmployeeRequest">
+        <soap12:header message="i0:ItemDetailsServiceCreateEmployeeRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="ItemDetailsServiceCreateEmployeeResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ItemDetailsServiceGroup">
+    <wsdl:port name="NetTcpBinding_ItemDetailsService" binding="tns:NetTcpBinding_ItemDetailsService">
+      <soap12:address location="net.tcp://safa-aos-01:8201/DynamicsAx/Services/ItemDetailsServiceGroup" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://safa-aos-01:8201/DynamicsAx/Services/ItemDetailsServiceGroup</wsa10:Address>
+        <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <Upn>Administrator@DOMAINAX.COM</Upn>
+        </Identity>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

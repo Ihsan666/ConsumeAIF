@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="f04c3a75-227c-466b-820e-9bedf50a5602" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://SAFA-AOS-01:8101/DynamicsAx/Services/ItemDetailsServiceGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ItemDetailsServiceGroup.xsd" MetadataType="Schema" ID="38ebf24b-ce7f-449a-be52-9ee6be34c7f6" SourceId="1" SourceUrl="http://safa-aos-01:8101/DynamicsAx/Services/ItemDetailsServiceGroup?xsd=xsd0" />
+    <MetadataFile FileName="ItemDetailsServiceGroup.wsdl" MetadataType="Wsdl" ID="a964b0d2-4096-4cf1-91a4-a26ffd216ee9" SourceId="1" SourceUrl="http://safa-aos-01:8101/DynamicsAx/Services/ItemDetailsServiceGroup?wsdl=wsdl0" />
+    <MetadataFile FileName="ItemDetailsServiceGroup1.wsdl" MetadataType="Wsdl" ID="5b0027e5-28a2-41bd-a12c-c09d8193068d" SourceId="1" SourceUrl="http://safa-aos-01:8101/DynamicsAx/Services/ItemDetailsServiceGroup" />
+    <MetadataFile FileName="ItemDetailsServiceGroup1.xsd" MetadataType="Schema" ID="261996af-cdad-4b93-8be0-0a783d093913" SourceId="1" SourceUrl="http://safa-aos-01:8101/DynamicsAx/Services/ItemDetailsServiceGroup?xsd=xsd4" />
+    <MetadataFile FileName="ItemDetailsServiceGroup2.xsd" MetadataType="Schema" ID="eb4f7a08-66e9-43e7-9291-27bd060c6add" SourceId="1" SourceUrl="http://safa-aos-01:8101/DynamicsAx/Services/ItemDetailsServiceGroup?xsd=xsd1" />
+    <MetadataFile FileName="ItemDetailsServiceGroup3.xsd" MetadataType="Schema" ID="401216eb-bd70-4e62-b889-64e89c6014df" SourceId="1" SourceUrl="http://safa-aos-01:8101/DynamicsAx/Services/ItemDetailsServiceGroup?xsd=xsd3" />
+    <MetadataFile FileName="ItemDetailsServiceGroup4.xsd" MetadataType="Schema" ID="f6148dec-73bd-408c-8696-d0c2343882b8" SourceId="1" SourceUrl="http://safa-aos-01:8101/DynamicsAx/Services/ItemDetailsServiceGroup?xsd=xsd5" />
+    <MetadataFile FileName="ItemDetailsServiceGroup5.xsd" MetadataType="Schema" ID="68f3ac5c-b1cb-4225-b02f-e3aa7f049bf5" SourceId="1" SourceUrl="http://safa-aos-01:8101/DynamicsAx/Services/ItemDetailsServiceGroup?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

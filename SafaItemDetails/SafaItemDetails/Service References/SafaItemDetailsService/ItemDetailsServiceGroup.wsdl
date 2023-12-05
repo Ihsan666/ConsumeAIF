@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://tempuri.org" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://safa-aos-01:8101/DynamicsAx/Services/ItemDetailsServiceGroup?xsd=xsd0" namespace="http://tempuri.org" />
+      <xsd:import schemaLocation="http://safa-aos-01:8101/DynamicsAx/Services/ItemDetailsServiceGroup?xsd=xsd2" namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" />
+      <xsd:import schemaLocation="http://safa-aos-01:8101/DynamicsAx/Services/ItemDetailsServiceGroup?xsd=xsd4" namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" />
+      <xsd:import schemaLocation="http://safa-aos-01:8101/DynamicsAx/Services/ItemDetailsServiceGroup?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://safa-aos-01:8101/DynamicsAx/Services/ItemDetailsServiceGroup?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://safa-aos-01:8101/DynamicsAx/Services/ItemDetailsServiceGroup?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.AX.Framework.Services" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ItemDetailsServiceGetItemBatchesRequest">
+    <wsdl:part name="parameters" element="tns:ItemDetailsServiceGetItemBatchesRequest" />
+  </wsdl:message>
+  <wsdl:message name="ItemDetailsServiceGetItemBatchesRequest_Headers">
+    <wsdl:part xmlns:q1="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q1:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="ItemDetailsServiceGetItemBatchesResponse">
+    <wsdl:part name="parameters" element="tns:ItemDetailsServiceGetItemBatchesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ItemDetailsService_getItemBatches_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q2:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="ItemDetailsServiceGeDetailsFromBarcodeRequest">
+    <wsdl:part name="parameters" element="tns:ItemDetailsServiceGeDetailsFromBarcodeRequest" />
+  </wsdl:message>
+  <wsdl:message name="ItemDetailsServiceGeDetailsFromBarcodeRequest_Headers">
+    <wsdl:part xmlns:q3="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q3:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="ItemDetailsServiceGeDetailsFromBarcodeResponse">
+    <wsdl:part name="parameters" element="tns:ItemDetailsServiceGeDetailsFromBarcodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ItemDetailsService_geDetailsFromBarcode_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q4:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="ItemDetailsServiceGetOpenTagCountJournalsRequest">
+    <wsdl:part name="parameters" element="tns:ItemDetailsServiceGetOpenTagCountJournalsRequest" />
+  </wsdl:message>
+  <wsdl:message name="ItemDetailsServiceGetOpenTagCountJournalsRequest_Headers">
+    <wsdl:part xmlns:q5="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q5:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="ItemDetailsServiceGetOpenTagCountJournalsResponse">
+    <wsdl:part name="parameters" element="tns:ItemDetailsServiceGetOpenTagCountJournalsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ItemDetailsService_getOpenTagCountJournals_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q6:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="ItemDetailsServiceSafaCreateEmployeeRequest">
+    <wsdl:part name="parameters" element="tns:ItemDetailsServiceSafaCreateEmployeeRequest" />
+  </wsdl:message>
+  <wsdl:message name="ItemDetailsServiceSafaCreateEmployeeRequest_Headers">
+    <wsdl:part xmlns:q7="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q7:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="ItemDetailsServiceSafaCreateEmployeeResponse">
+    <wsdl:part name="parameters" element="tns:ItemDetailsServiceSafaCreateEmployeeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ItemDetailsService_SafaCreateEmployee_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q8="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q8:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="ItemDetailsServiceGetCustomerPointsRequest">
+    <wsdl:part name="parameters" element="tns:ItemDetailsServiceGetCustomerPointsRequest" />
+  </wsdl:message>
+  <wsdl:message name="ItemDetailsServiceGetCustomerPointsRequest_Headers">
+    <wsdl:part xmlns:q9="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q9:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="ItemDetailsServiceGetCustomerPointsResponse">
+    <wsdl:part name="parameters" element="tns:ItemDetailsServiceGetCustomerPointsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ItemDetailsService_getCustomerPoints_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q10="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q10:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="ItemDetailsServiceGetAllItemsRequest">
+    <wsdl:part name="parameters" element="tns:ItemDetailsServiceGetAllItemsRequest" />
+  </wsdl:message>
+  <wsdl:message name="ItemDetailsServiceGetAllItemsRequest_Headers">
+    <wsdl:part xmlns:q11="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q11:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="ItemDetailsServiceGetAllItemsResponse">
+    <wsdl:part name="parameters" element="tns:ItemDetailsServiceGetAllItemsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ItemDetailsService_getAllItems_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q12="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q12:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="ItemDetailsServiceGetItemDetailsRequest">
+    <wsdl:part name="parameters" element="tns:ItemDetailsServiceGetItemDetailsRequest" />
+  </wsdl:message>
+  <wsdl:message name="ItemDetailsServiceGetItemDetailsRequest_Headers">
+    <wsdl:part xmlns:q13="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q13:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="ItemDetailsServiceGetItemDetailsResponse">
+    <wsdl:part name="parameters" element="tns:ItemDetailsServiceGetItemDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ItemDetailsService_getItemDetails_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q14="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q14:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="ItemDetailsServiceCreateTagCountLineRequest">
+    <wsdl:part name="parameters" element="tns:ItemDetailsServiceCreateTagCountLineRequest" />
+  </wsdl:message>
+  <wsdl:message name="ItemDetailsServiceCreateTagCountLineRequest_Headers">
+    <wsdl:part xmlns:q15="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q15:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="ItemDetailsServiceCreateTagCountLineResponse">
+    <wsdl:part name="parameters" element="tns:ItemDetailsServiceCreateTagCountLineResponse" />
+  </wsdl:message>
+  <wsdl:message name="ItemDetailsService_CreateTagCountLine_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q16="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q16:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="ItemDetailsServiceEarnOrRedeemPointsRequest">
+    <wsdl:part name="parameters" element="tns:ItemDetailsServiceEarnOrRedeemPointsRequest" />
+  </wsdl:message>
+  <wsdl:message name="ItemDetailsServiceEarnOrRedeemPointsRequest_Headers">
+    <wsdl:part xmlns:q17="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q17:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="ItemDetailsServiceEarnOrRedeemPointsResponse">
+    <wsdl:part name="parameters" element="tns:ItemDetailsServiceEarnOrRedeemPointsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ItemDetailsService_earnOrRedeemPoints_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q18="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q18:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="ItemDetailsServiceCreateEmployeeRequest">
+    <wsdl:part name="parameters" element="tns:ItemDetailsServiceCreateEmployeeRequest" />
+  </wsdl:message>
+  <wsdl:message name="ItemDetailsServiceCreateEmployeeRequest_Headers">
+    <wsdl:part xmlns:q19="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q19:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="ItemDetailsServiceCreateEmployeeResponse">
+    <wsdl:part name="parameters" element="tns:ItemDetailsServiceCreateEmployeeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ItemDetailsService_CreateEmployee_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q20="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q20:AifFault" />
+  </wsdl:message>
+  <wsdl:portType name="ItemDetailsService">
+    <wsdl:operation name="getItemBatches">
+      <wsdl:input wsaw:Action="http://tempuri.org/ItemDetailsService/getItemBatches" name="ItemDetailsServiceGetItemBatchesRequest" message="tns:ItemDetailsServiceGetItemBatchesRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ItemDetailsService/getItemBatchesResponse" name="ItemDetailsServiceGetItemBatchesResponse" message="tns:ItemDetailsServiceGetItemBatchesResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ItemDetailsService/getItemBatchesAifFaultFault" name="AifFaultFault" message="tns:ItemDetailsService_getItemBatches_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="geDetailsFromBarcode">
+      <wsdl:input wsaw:Action="http://tempuri.org/ItemDetailsService/geDetailsFromBarcode" name="ItemDetailsServiceGeDetailsFromBarcodeRequest" message="tns:ItemDetailsServiceGeDetailsFromBarcodeRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ItemDetailsService/geDetailsFromBarcodeResponse" name="ItemDetailsServiceGeDetailsFromBarcodeResponse" message="tns:ItemDetailsServiceGeDetailsFromBarcodeResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ItemDetailsService/geDetailsFromBarcodeAifFaultFault" name="AifFaultFault" message="tns:ItemDetailsService_geDetailsFromBarcode_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getOpenTagCountJournals">
+      <wsdl:input wsaw:Action="http://tempuri.org/ItemDetailsService/getOpenTagCountJournals" name="ItemDetailsServiceGetOpenTagCountJournalsRequest" message="tns:ItemDetailsServiceGetOpenTagCountJournalsRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ItemDetailsService/getOpenTagCountJournalsResponse" name="ItemDetailsServiceGetOpenTagCountJournalsResponse" message="tns:ItemDetailsServiceGetOpenTagCountJournalsResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ItemDetailsService/getOpenTagCountJournalsAifFaultFault" name="AifFaultFault" message="tns:ItemDetailsService_getOpenTagCountJournals_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SafaCreateEmployee">
+      <wsdl:input wsaw:Action="http://tempuri.org/ItemDetailsService/SafaCreateEmployee" name="ItemDetailsServiceSafaCreateEmployeeRequest" message="tns:ItemDetailsServiceSafaCreateEmployeeRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ItemDetailsService/SafaCreateEmployeeResponse" name="ItemDetailsServiceSafaCreateEmployeeResponse" message="tns:ItemDetailsServiceSafaCreateEmployeeResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ItemDetailsService/SafaCreateEmployeeAifFaultFault" name="AifFaultFault" message="tns:ItemDetailsService_SafaCreateEmployee_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getCustomerPoints">
+      <wsdl:input wsaw:Action="http://tempuri.org/ItemDetailsService/getCustomerPoints" name="ItemDetailsServiceGetCustomerPointsRequest" message="tns:ItemDetailsServiceGetCustomerPointsRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ItemDetailsService/getCustomerPointsResponse" name="ItemDetailsServiceGetCustomerPointsResponse" message="tns:ItemDetailsServiceGetCustomerPointsResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ItemDetailsService/getCustomerPointsAifFaultFault" name="AifFaultFault" message="tns:ItemDetailsService_getCustomerPoints_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllItems">
+      <wsdl:input wsaw:Action="http://tempuri.org/ItemDetailsService/getAllItems" name="ItemDetailsServiceGetAllItemsRequest" message="tns:ItemDetailsServiceGetAllItemsRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ItemDetailsService/getAllItemsResponse" name="ItemDetailsServiceGetAllItemsResponse" message="tns:ItemDetailsServiceGetAllItemsResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ItemDetailsService/getAllItemsAifFaultFault" name="AifFaultFault" message="tns:ItemDetailsService_getAllItems_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getItemDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/ItemDetailsService/getItemDetails" name="ItemDetailsServiceGetItemDetailsRequest" message="tns:ItemDetailsServiceGetItemDetailsRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ItemDetailsService/getItemDetailsResponse" name="ItemDetailsServiceGetItemDetailsResponse" message="tns:ItemDetailsServiceGetItemDetailsResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ItemDetailsService/getItemDetailsAifFaultFault" name="AifFaultFault" message="tns:ItemDetailsService_getItemDetails_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateTagCountLine">
+      <wsdl:input wsaw:Action="http://tempuri.org/ItemDetailsService/CreateTagCountLine" name="ItemDetailsServiceCreateTagCountLineRequest" message="tns:ItemDetailsServiceCreateTagCountLineRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ItemDetailsService/CreateTagCountLineResponse" name="ItemDetailsServiceCreateTagCountLineResponse" message="tns:ItemDetailsServiceCreateTagCountLineResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ItemDetailsService/CreateTagCountLineAifFaultFault" name="AifFaultFault" message="tns:ItemDetailsService_CreateTagCountLine_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="earnOrRedeemPoints">
+      <wsdl:input wsaw:Action="http://tempuri.org/ItemDetailsService/earnOrRedeemPoints" name="ItemDetailsServiceEarnOrRedeemPointsRequest" message="tns:ItemDetailsServiceEarnOrRedeemPointsRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ItemDetailsService/earnOrRedeemPointsResponse" name="ItemDetailsServiceEarnOrRedeemPointsResponse" message="tns:ItemDetailsServiceEarnOrRedeemPointsResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ItemDetailsService/earnOrRedeemPointsAifFaultFault" name="AifFaultFault" message="tns:ItemDetailsService_earnOrRedeemPoints_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateEmployee">
+      <wsdl:input wsaw:Action="http://tempuri.org/ItemDetailsService/CreateEmployee" name="ItemDetailsServiceCreateEmployeeRequest" message="tns:ItemDetailsServiceCreateEmployeeRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ItemDetailsService/CreateEmployeeResponse" name="ItemDetailsServiceCreateEmployeeResponse" message="tns:ItemDetailsServiceCreateEmployeeResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ItemDetailsService/CreateEmployeeAifFaultFault" name="AifFaultFault" message="tns:ItemDetailsService_CreateEmployee_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>
